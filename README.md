@@ -1,5 +1,4 @@
 # Kofa
-Voter intelligence for the 2024 election.
 
 ![Kofa](Shared/kofa.png)
 

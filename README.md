@@ -4,7 +4,7 @@
 
 
 ## Purpose of this application
-To get clear and consise information about upcoming elections by zipcode information.
+To get clear and consise information about upcoming elections and suggestions on what to vote on based on black conciousness. 
 
 ## User Story
 As a user I want too..

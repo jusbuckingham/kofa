@@ -1,5 +1,5 @@
-# kofa
-Voter intelligence
+# Kofa
+Voter intelligence for foundational black americans
 
 ## Purpose of this application
 To get clear and consise information about upcoming elections by zipcode information.

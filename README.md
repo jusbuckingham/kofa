@@ -1,5 +1,5 @@
 # Kofa
-Voter intelligence for foundational black americans
+Voter intelligence for the 2024 election.
 
 ## Purpose of this application
 To get clear and consise information about upcoming elections by zipcode information.

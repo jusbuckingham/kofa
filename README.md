@@ -2,4 +2,11 @@
 Voter intelligence
 
 ## Purpose of this application
-So that I can get clear and consise information about candates running in the 2024 election by zipcode.
+To get clear and consise information about upcoming elections by zipcode information.
+
+## User Story
+As a user I want too..
+
+- Enter my zip code
+- See my full ballot
+- See suggestions and reasoning for voting for a candidate or proposition.

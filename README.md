@@ -1,4 +1,4 @@
-# Kofa
+# kofa
 
 ![Kofa](Shared/kofa.png)
 ![Kofa UI](Shared/kofa-ui.png)

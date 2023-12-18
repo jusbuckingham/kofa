@@ -10,6 +10,7 @@ To get clear and consise information about upcoming elections and suggestions on
 - React
 - Nodejs
 - Express
+- BallotPedia API
 - Langchain
 - Open AI API
 - MongoDB
@@ -17,6 +18,7 @@ To get clear and consise information about upcoming elections and suggestions on
 ## Possible Future Technology Stack
 - React
 - Streamlit
+- BallotPedia API
 - Langchain
 - Open AI API
 - Mongo DB

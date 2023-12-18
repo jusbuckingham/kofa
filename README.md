@@ -6,6 +6,21 @@
 ## Purpose of this application
 To get clear and consise information about upcoming elections and suggestions on what to vote on based on "Foundational Black American" (FBA) conciousness. 
 
+## Current Technology Stack
+- React
+- Nodejs
+- Express
+- Langchain
+- Open AI API
+- MongoDB
+
+## Possible Future Technology Stack
+- React
+- Streamlit
+- Langchain
+- Open AI API
+- Mongo DB
+
 ## User Story
 As a user I want too..
 

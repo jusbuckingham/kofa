@@ -23,6 +23,10 @@ To get clear and consise information about upcoming elections and suggestions on
 - Open AI API
 - Mongo DB
 
+## Products
+- Chat UI
+- API
+
 ## User Story
 As a user I want too..
 

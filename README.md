@@ -30,7 +30,6 @@ To get clear and consise information about upcoming elections and suggestions on
 ## User Story
 As a user I want too..
 
-- Take a picture of my ballot.
-- See my full ballot based on my address.
-- See suggestions and reasoning for voting for a candidate or proposition based on the objective net positve benifit to "Foundation Black Americans."
-- Have access to additional features if I create an account.
+- Log in
+- See prefered voting choices based on my address.
+- Be able to copy choices to a clipboard or download a pdf.

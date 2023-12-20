@@ -5,7 +5,7 @@
 ![Kofa File Structure](imgs/kofa-file-structure.png)
 
 ## Purpose of this application
-To get clear and consise information about upcoming elections and suggestions on what to vote on based on "Foundational Black American" (FBA) conciousness. 
+To get clear and consise voting suggestions for upcoming elections based on "Foundational Black American" (FBA) conciousness. 
 
 ## Current Technology Stack
 - React
@@ -16,12 +16,12 @@ To get clear and consise information about upcoming elections and suggestions on
 - MongoDB
 
 ## Products
-- Chat UI
+- UI
 - API
 
 ## Technology Story
-- Log into app.
-- Use BallotPedia API to pull ballot information by address into cache.
+- Authenticate user by creating a profile and logging into the app.
+- Schedule cron jobs to bring in up to date ballot information from the BallotPedia API and store it as JSON files in MongoDB.
 - Call Chatgpt API and have it fetch and choose best choices from the ballot based on voter preferences prompts that come from the profile settings.
 - Display this information on the front end of the app.
 - Make this information copyable and downloadable.
@@ -30,5 +30,5 @@ To get clear and consise information about upcoming elections and suggestions on
 As a user I want too..
 
 - Create a profile containing name, email address, phone number, physical address & voter preferences. 
-- I want to immediatly see voter suggestions based on my ballot and the reasons for the choices.
-- I want to be able to copy these choices as a cheatsheet or download them as a pdf.
+- Immediatly see voter suggestions based on my ballot and the reasons for the choices.
+- Be able to copy these choices as a cheatsheet or download them as a pdf.

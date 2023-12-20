@@ -20,7 +20,7 @@ To get clear and consise information about upcoming elections and suggestions on
 - API
 
 ## Technology Story
-- Log into streamlit application.
+- Log into app.
 - Use BallotPedia API to pull ballot information by address into cache.
 - Call Chatgpt API and have it fetch and choose best choices from the ballot based on voter preferences prompts that come from the profile settings.
 - Display this information on the front end of the app.

@@ -38,3 +38,9 @@ As a user I want too..
 - Create a profile containing name, email address, phone number, physical address & voter preferences. 
 - Immediatly see voter suggestions based on my ballot and the reasons for the choices.
 - Be able to copy these choices as a cheatsheet or download them as a pdf.
+
+## Possible Future Features
+- A card that shows closest polling stations.
+- Access to previous year suggestions.
+- Real time election results.
+- Ability to chat with suggestions. 

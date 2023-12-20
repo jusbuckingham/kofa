@@ -1,7 +1,7 @@
 # kofa
 ![Kofa Icon](imgs/kofa.png)
 
-## Wireframe
+## Wireframe (UI)
 ![Kofa UI Wireframe](imgs/kofa-ui-wirefram.png)
 
 ## File Structure

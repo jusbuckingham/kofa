@@ -1,4 +1,5 @@
 # kofa
+![Kofa Icon](imgs/kofa.png)
 
 ## File Structure
 ![Kofa File Structure](imgs/kofa-file-structure.png)

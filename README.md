@@ -1,6 +1,6 @@
 # kofa
 
-![Kofa](Shared/kofa.png)
+## File Structure
 ![Kofa File Structure](imgs/kofa-file-structure.png)
 
 ## Purpose of this application
@@ -11,7 +11,6 @@ To get clear and consise information about upcoming elections and suggestions on
 - Nodejs
 - Express
 - BallotPedia API
-- Langchain
 - Open AI API
 - MongoDB
 

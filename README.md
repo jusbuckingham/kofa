@@ -48,7 +48,7 @@ To get clear and consise voting suggestions for upcoming elections based on "Fou
 - React
 - Nodejs
 - Express
-- BallotPedia API
+- [Developer Ballotpedia - Elections](https://developer.ballotpedia.org/#elections)
 - Cron
 - Open AI API
 - Langchain (Maybe)

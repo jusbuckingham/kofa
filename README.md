@@ -41,7 +41,6 @@ kofa/
 └── package.json                 # Root package.json, primarily for scripts
 
 ```
-
 ## Purpose of this application
 To get clear and consise voting suggestions for upcoming elections based on "Foundational Black American" (FBA) conciousness. 
 

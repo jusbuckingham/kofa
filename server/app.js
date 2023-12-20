@@ -1,37 +1,25 @@
 const express = require('express');
 const cors = require('cors');
-const mongoose = require('mongoose'); // Uncomment if using MongoDB
-
-// Import routes
+const dotenv = require('dotenv');
 const ballotRoutes = require('./routes/ballotRoutes');
-const pdfRoutes = require('./routes/pdfRoutes');
+// Include other routes as necessary
+
+// Initialize dotenv to use .env file variables
+dotenv.config();
 
 const app = express();
 
 // Middleware
-app.use(cors()); // Enable CORS for all requests
-app.use(express.json()); // Parse JSON bodies
-
-// Database connection
-// Uncomment and configure if using MongoDB
-// mongoose.connect('your-mongodb-connection-string', { useNewUrlParser: true, useUnifiedTopology: true });
+app.use(cors());
+app.use(express.json()); // for parsing application/json
 
 // Routes
 app.use('/api/ballot', ballotRoutes);
-app.use('/api/pdf', pdfRoutes);
+// Setup other routes...
 
-// Root route (optional)
-app.get('/', (req, res) => {
-  res.send('Welcome to the Kofa Server');
-});
-
-// Error handling
+// Catch-all for unhandled routes
 app.use((req, res, next) => {
   res.status(404).send('Sorry, that route does not exist.');
 });
-
-// Start the server (usually done in a separate file like server.js)
-const PORT = process.env.PORT || 5000;
-app.listen(PORT, () => console.log(`Server running on port ${PORT}`));
 
 module.exports = app;

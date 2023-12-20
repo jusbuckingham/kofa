@@ -1,0 +1,29 @@
+kofa/
+│
+├── client/                      # React frontend
+│   ├── public/                  # Public assets like HTML file
+│   ├── src/                     # Source files for React
+│   │   ├── components/          # React components
+│   │   │   ├── AddressInput.js  # Component for inputting address
+│   │   │   └── BallotChoices.js # Component to display ballot choices
+│   │   ├── api/                 # API related functions
+│   │   │   └── serverApi.js     # Functions to interact with your Express server
+│   │   ├── App.js               # Main React application file
+│   │   └── index.js             # Entry point for React application
+│   ├── package.json             # Dependencies and scripts for the frontend
+│   └── ...
+│
+├── server/                      # Node/Express backend
+│   ├── api/                     # Express routes
+│   │   └── ballotRoutes.js      # Routes for ballot related requests
+│   ├── services/                # Business logic / services
+│   │   └── ballotService.js     # Service for Ballotpedia and ChatGPT API interactions
+│   ├── app.js                   # Express app setup
+│   ├── server.js                # Entry point for the backend server
+│   ├── package.json             # Dependencies and scripts for the backend
+│   └── ...
+│
+├── .env                         # Environment variables (for development)
+├── .gitignore                   # Specifies intentionally untracked files to ignore
+├── README.md                    # Project documentation
+└── package.json                 # Root package.json, primarily for scripts

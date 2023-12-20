@@ -1,0 +1,26 @@
+{
+    "name": "kofa",
+    "version": "1.0.0",
+    "description": "Kofa - A Voter Preferences Analysis App",
+    "main": "server.js",
+    "scripts": {
+      "start": "node server/server.js",
+      "server": "nodemon server/server.js",
+      "client": "cd client && npm start",
+      "dev": "concurrently \"npm run server\" \"npm run client\"",
+      "install-client": "cd client && npm install",
+      "build-client": "cd client && npm run build",
+      "heroku-postbuild": "npm run install-client && npm run build-client"
+    },
+    "author": "jus buckingham",
+    "license": "ISC",
+    "dependencies": {
+      "concurrently": "^6.0.0",
+      "express": "^4.17.1"
+    },
+    "engines": {
+      "node": "14.x",
+      "npm": "6.x"
+    }
+  }
+  

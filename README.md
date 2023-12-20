@@ -1,7 +1,7 @@
 # kofa
 
 ![Kofa](Shared/kofa.png)
-![Kofa UI](Shared/kofa-ui.png)
+![Kofa File Structure](imgs/kofa-file-structure.png)
 
 ## Purpose of this application
 To get clear and consise information about upcoming elections and suggestions on what to vote on based on "Foundational Black American" (FBA) conciousness. 
@@ -14,14 +14,6 @@ To get clear and consise information about upcoming elections and suggestions on
 - Langchain
 - Open AI API
 - MongoDB
-
-## Possible Future Technology Stack
-- React
-- Streamlit
-- BallotPedia API
-- Langchain
-- Open AI API
-- Mongo DB
 
 ## Products
 - Chat UI

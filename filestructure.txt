@@ -20,6 +20,8 @@ kofa/
 │   │   └── pdfRoutes.js         # Routes for PDF generation
 │   ├── services/                # Business logic / services
 │   │   └── ballotService.js     # Service for API integration and data processing
+│   ├── scripts/                 # Standalone scripts for scheduled tasks
+│   │   └── fetchBallotData.js   # Script to fetch ballot data from Ballotpedia
 │   ├── app.js                   # Express app setup
 │   ├── server.js                # Main entry point for the server
 │   ├── package.json             # Dependencies and scripts for the backend

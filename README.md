@@ -1,9 +1,6 @@
 # kofa
 ![Kofa Icon](imgs/kofa.png)
 
-## Wireframe (UI)
-![Kofa UI Wireframe](imgs/kofa-ui-wirefram.png)
-
 ## File Structure
 ```
 kofa/
@@ -41,6 +38,9 @@ kofa/
 └── package.json                 # Root package.json, primarily for scripts
 
 ```
+## Wireframe (UI)
+![Kofa UI Wireframe](imgs/kofa-ui-wirefram.png)
+
 ## Purpose of this application
 To get clear and consise voting suggestions for upcoming elections based on "Foundational Black American" (FBA) conciousness. 
 

@@ -2,10 +2,11 @@ kofa/
 │
 ├── client/                      # React frontend
 │   ├── public/                  # Public assets like HTML file
+│   │   └── index.html           # Main HTML file
 │   ├── src/                     # Source files for React
 │   │   ├── components/          # React components
-│   │   │   ├── AddressInput.js  # Component for inputting address
-│   │   │   └── BallotChoices.js # Component to display ballot choices
+│   │   │   ├── BallotCard.js    # Component to display a single ballot item
+│   │   │   └── BallotList.js    # Component to display list of ballots
 │   │   ├── api/                 # API related functions
 │   │   │   └── serverApi.js     # Functions to interact with your Express server
 │   │   ├── App.js               # Main React application file
@@ -14,12 +15,13 @@ kofa/
 │   └── ...
 │
 ├── server/                      # Node/Express backend
-│   ├── api/                     # Express routes
-│   │   └── ballotRoutes.js      # Routes for ballot related requests
+│   ├── routes/                  # Express routes
+│   │   ├── ballotRoutes.js      # Routes for ballot related requests
+│   │   └── pdfRoutes.js         # Routes for PDF generation
 │   ├── services/                # Business logic / services
-│   │   └── ballotService.js     # Service for Ballotpedia and ChatGPT API interactions
+│   │   └── ballotService.js     # Service for API integration and data processing
 │   ├── app.js                   # Express app setup
-│   ├── server.js                # Entry point for the backend server
+│   ├── server.js                # Main entry point for the server
 │   ├── package.json             # Dependencies and scripts for the backend
 │   └── ...
 │

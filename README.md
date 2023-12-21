@@ -45,17 +45,17 @@ kofa/
 To get curated votiner suggestions for upcoming elections based on Foundational Black American Conciousness.
 
 ## Technology Stack
-- React
-- Nodejs
-- Express
+- [React](https://react.dev/)
+- [Nodejs](https://nodejs.org/en/learn/getting-started/introduction-to-nodejs)
+- [Express](https://expressjs.com/)
 - [Civic Information API](https://developers.google.com/civic-information) | [Ballotpedia API](https://developer.ballotpedia.org/#elections) 
-- Open AI API
-- Langchain (Maybe)
-- MongoDB (Maybe)
-- AWS (Maybe not needed)
-- Vercel (Frontend Deployment)
-- Heroku (Backend Deployment)
-- Heroku Scheduler (For Cron Jobs)
+- [OpenAI API](https://platform.openai.com/docs/api-reference)
+- [Langchain (Maybe)](https://python.langchain.com/docs/get_started/quickstart)
+- [MongoDB (Maybe)](https://www.mongodb.com/docs/drivers/node/current/)
+- [AWS (Maybe not needed)](https://docs.aws.amazon.com/)
+- [Vercel (Frontend Deployment)](https://vercel.com/docs)
+- [Heroku (Backend Deployment)](https://devcenter.heroku.com/categories/reference)
+- [Heroku Scheduler (For Cron Jobs)](https://devcenter.heroku.com/articles/scheduler)
 
 ## ERD
 ### Entities

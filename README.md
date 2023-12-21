@@ -58,6 +58,76 @@ To get curated votiner suggestions for upcoming elections based on Foundational 
 - Heroku (Backend Deployment)
 - Heroku Scheduler (For Cron Jobs)
 
+## ERD
+### Entities
+1. User
+    - Attributes: UserID, Name, Email, Address
+
+2. Election
+    - Attributes: ElectionID, Name, Date, Location
+
+3. BallotItem
+    - Attributes: BallotItemID, Title, Description, ElectionID
+
+4. Candidate
+    - Attributes: CandidateID, Name, Party, BallotItemID, InfoURL
+
+5. Vote
+    - Attributes: VoteID, UserID, BallotItemID, CandidateID, Timestamp
+
+6. UserSelections
+    - Attributes: SelectionID, UserID, BallotItemID, CandidateID, Notes
+
+### Relationships
+- User to Vote: One-to-Many (A user can cast multiple votes, but each vote is cast by only one user).
+- Election to BallotItem: One-to-Many (An election contains multiple ballot items, but each ballot item belongs to one election).
+- BallotItem to Candidate: One-to-Many (A ballot item can have multiple candidates, but each candidate is associated with one ballot item).
+- User to UserSelections: One-to-Many (A user can have multiple selections, but each selection is associated with one user).
+- BallotItem to UserSelections: One-to-Many (A ballot item can be part of multiple user selections, but each selection is for one ballot item).
+- Candidate to UserSelections: One-to-Many (A candidate can be chosen in multiple user selections, but each selection is for one candidate).
+
+### ERD Diagram Visualization
+- User
+    - UserID (PK)
+    - Name
+    - Email
+    - Address
+
+- Election
+    - ElectionID (PK)
+    - Name
+    - Date
+    - Location
+    
+- BallotItem
+    - BallotItemID (PK)
+    - Title
+    - Description
+    - ElectionID (FK)
+    
+- Candidate
+    - CandidateID (PK)
+    - Name
+    - Party
+    - BallotItemID (FK)
+    - InfoURL
+    
+- Vote
+    - VoteID (PK)
+    - UserID (FK)
+    - BallotItemID (FK)
+    - CandidateID (FK)
+    - Timestamp
+
+- UserSelections
+    - SelectionID (PK)
+    - UserID (FK)
+    - BallotItemID (FK)
+    - CandidateID (FK)
+    - Notes
+
+(PK) denotes a Primary Key, and (FK) denotes a Foreign Key.
+
 ## Products
 - Desktop App
 - iOS App

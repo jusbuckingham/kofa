@@ -52,7 +52,7 @@ To get curated votiner suggestions for upcoming elections based on Foundational 
 - Cron
 - Open AI API
 - Langchain (Maybe)
-- MongoDB
+- MongoDB (Maybe)
 - AWS (Maybe not needed)
 - Vercel (Frontend Deployment)
 - Heroku (Backend Deployment)

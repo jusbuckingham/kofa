@@ -42,7 +42,7 @@ kofa/
 ![Kofa UI Wireframe](imgs/kofa-ui-wirefram.png)
 
 ## Purpose of this application
-To get clear and consise voting suggestions for upcoming elections based on "Foundational Black American" (FBA) conciousness. 
+To get curated votiner suggestions for upcoming elections based on Foundational Black American Conciousness.
 
 ## Technology Stack
 - React

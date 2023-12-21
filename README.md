@@ -49,7 +49,6 @@ To get curated votiner suggestions for upcoming elections based on Foundational 
 - Nodejs
 - Express
 - [Civic Information API](https://developers.google.com/civic-information) | [Ballotpedia API](https://developer.ballotpedia.org/#elections) 
-- Cron
 - Open AI API
 - Langchain (Maybe)
 - MongoDB (Maybe)

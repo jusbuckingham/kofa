@@ -45,7 +45,7 @@ kofa/
 
 
 ## Purpose of this application
-To get curated voting suggestions for upcoming elections.
+To get curated voting suggestions for the upcoming 2024 election.
 
 
 ## Summary

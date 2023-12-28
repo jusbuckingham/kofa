@@ -45,11 +45,11 @@ kofa/
 
 
 ## Purpose of this application
-To get curated voting suggestions for upcoming elections based on Foundational Black American Consciousness.
+To get curated voting suggestions for upcoming elections.
 
 
 ## Summary
-I want to take my ballot information and use a LLM to make decisions on who to vote for based on the net positives for the foundation black american community.
+I want to take my ballot information and use a LLM to make decisions on who to vote for based on specific questions answered when creating a profile.
 
 
 ## Technology Stack

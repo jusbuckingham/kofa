@@ -155,7 +155,7 @@ I want to take my ballot information and use a LLM to make decisions on who to v
 
 
 ## Technology Story
-- Authenticate preferences based on urser profile.
+- Authenticate preferences based on user profile.
 - Schedule cron jobs to bring in up-to-date ballot information from the BallotPedia API and store it as JSON files in MongoDB.
 - Call Chat Gpt API and have it fetch and choose best choices from the ballot based on voter preferences prompts that come from the profile settings.
 - Display this information on the front end of the app.

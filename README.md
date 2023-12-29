@@ -48,11 +48,16 @@ kofa/
 
 
 ## Purpose of this application
-To get curated voting suggestions for the upcoming 2024 election.
+To get quick and easy voter suggestions on the 2024 election.
 
 
 ## Summary
 I want to take my ballot information based on my location and use a LLM to make decisions on who to vote for based on specific questions answered when creating a profile.
+
+## Target States:
+- California
+- New York
+- Michigan
 
 
 ## Technology Stack
@@ -169,9 +174,10 @@ I want to take my ballot information based on my location and use a LLM to make 
 As a user I want too..
 
 
-- Create a profile containing name, email address, phone number, physical address (latitude/longitude coordinates) & voter preferences.
-- Immediately see voter suggestions based on my ballot and the reasons for the choices.
-- Be able to copy these choices as a cheatsheet or download them as a pdf.
+- Create a user profile containing name, email address, phone number, physical address (latitude/longitude coordinates) & voter preferences.
+- See my full ballot for my area.
+- Click a button to see voter suggestions based on my preferences.
+- Be able to copy these choices as a cheatsheet to a notepad or download them as a pdf.
 
 
 ## Possible Future Features

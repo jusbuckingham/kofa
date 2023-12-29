@@ -49,7 +49,7 @@ To get curated voting suggestions for the upcoming 2024 election.
 
 
 ## Summary
-I want to take my ballot information and use a LLM to make decisions on who to vote for based on specific questions answered when creating a profile.
+I want to take my ballot information based on my location and use a LLM to make decisions on who to vote for based on specific questions answered when creating a profile.
 
 
 ## Technology Stack

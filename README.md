@@ -68,6 +68,7 @@ I want to take my ballot information based on my location and use a LLM to make 
 - [OpenAI API](https://platform.openai.com/docs/api-reference)
 - [Langchain (Maybe)](https://python.langchain.com/docs/get_started/quickstart)
 - [MongoDB (Maybe)](https://www.mongodb.com/docs/drivers/node/current/)
+- [PostgreSQL (Maybe)](https://www.postgresql.org/)
 - [AWS (Maybe not needed)](https://docs.aws.amazon.com/)
 - [Vercel (Frontend Deployment)](https://vercel.com/docs)
 - [Heroku (Backend Deployment)](https://devcenter.heroku.com/categories/reference)

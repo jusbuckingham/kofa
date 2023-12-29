@@ -164,9 +164,10 @@ I want to take my ballot information based on my location and use a LLM to make 
 
 ## Technology Story
 - Authenticate preferences based on user profile.
-- Schedule cron jobs to bring in up-to-date ballot information from the BallotPedia API and store it as JSON files in MongoDB.
-- Call Chat Gpt API and have it fetch and choose best choices from the ballot based on voter preferences prompts that come from the profile settings.
-- Display this information on the front end of the app.
+- Schedule historical cron jobs to bring in ballot information from an API and store it in a database.
+- Display full ballot based on location.
+- Use a LLM to choose best choices from the ballot based on voter preference prompts in the profile settings.
+- Click a button to be able to see a shortlist of sellections based on voter preferences.
 - Make this information copyable and downloadable.
 
 

@@ -12,7 +12,8 @@ kofa/
 │   ├── src/                     # Source files for React
 │   │   ├── components/          # React components
 │   │   │   ├── BallotCard.js    # Component to display a single ballot item
-│   │   │   └── BallotList.js    # Component to display list of ballots
+│   │   │   ├── BallotList.js    # Component to display list of ballots
+│   │   │   └── Login.js         # Component for user login
 │   │   ├── api/                 # API related functions
 │   │   │   └── serverApi.js     # Functions to interact with your Express server
 │   │   ├── App.js               # Main React application file
@@ -21,9 +22,12 @@ kofa/
 │   └── ...
 │
 ├── server/                      # Node/Express backend
+│   ├── models/                  # Mongoose models
+│   │   └── User.js              # User model with authentication and geocoding
 │   ├── routes/                  # Express routes
+│   │   ├── authRoutes.js        # Routes for authentication (login/register)
 │   │   ├── ballotRoutes.js      # Routes for ballot related requests
-│   │   └── pdfRoutes.js         # Routes for PDF generation
+│   │   └── userRoutes.js        # Routes for user-related operations (optional)
 │   ├── services/                # Business logic / services
 │   │   └── ballotService.js     # Service for API integration and data processing
 │   ├── scripts/                 # Standalone scripts for scheduled tasks
@@ -37,9 +41,8 @@ kofa/
 ├── .gitignore                   # Specifies intentionally untracked files to ignore
 ├── README.md                    # Project documentation
 └── package.json                 # Root package.json, primarily for scripts
-
-
 ```
+
 ## Wireframe (UI)
 ![Kofa UI Wireframe](imgs/kofa-ui-wirefram.png)
 

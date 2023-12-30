@@ -61,6 +61,7 @@ I want to take my ballot information based on my location and use a LLM to make 
 
 
 ## Technology Stack
+- [Kinde (Maybe use fro Auth?)](https://kinde.com/)
 - [React](https://react.dev/)
 - [Nodejs](https://nodejs.org/en/learn/getting-started/introduction-to-nodejs)
 - [Express](https://expressjs.com/)
@@ -71,7 +72,7 @@ I want to take my ballot information based on my location and use a LLM to make 
 - [PostgreSQL (Maybe)](https://www.postgresql.org/)
 - [AWS (Maybe not needed)](https://docs.aws.amazon.com/)
 - [Vercel (Frontend Deployment)](https://vercel.com/docs)
-- [Heroku (Backend Deployment)](https://devcenter.heroku.com/categories/reference)
+- [Heroku (Backend Deployment)](https://devcenter.heroku.com/categories/reference) | [NextJS]
 - [Heroku Scheduler (For Cron Jobs)](https://devcenter.heroku.com/articles/scheduler)
 
 

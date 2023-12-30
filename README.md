@@ -52,7 +52,7 @@ To get quick voter suggestions on the 2024 election.
 
 
 ## Summary
-I want to take my ballot information based on my location and use the app to make decisions on who to vote for based on specific questions answered when creating a profile.
+I want to take my local ballot and use the app to make decisions on who to vote for based on specific questions answered when creating a profile.
 
 ## Target States:
 - California

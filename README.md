@@ -71,15 +71,15 @@ I want to take my local ballot and use the app to make decisions on who to vote.
 
 
 ## Technology Stack
-- [Kinde (Maybe use for Auth?)](https://kinde.com/)
+- [Kinde](https://kinde.com/)
 - [React](https://react.dev/)
 - [Nodejs](https://nodejs.org/en/learn/getting-started/introduction-to-nodejs)
 - [Express](https://expressjs.com/)
 - [Civic Information API](https://developers.google.com/civic-information) | [Ballotpedia API](https://developer.ballotpedia.org/#elections)
 - [OpenAI API](https://platform.openai.com/docs/api-reference)
-- [Langchain (Maybe)](https://python.langchain.com/docs/get_started/quickstart)
-- [MongoDB (Maybe)](https://www.mongodb.com/docs/drivers/node/current/)
-- [AWS (Maybe not needed)](https://docs.aws.amazon.com/)
+- [Langchain](https://python.langchain.com/docs/get_started/quickstart)
+- [MongoDB](https://www.mongodb.com/docs/drivers/node/current/)
+- [AWS)](https://docs.aws.amazon.com/)
 - [Vercel (Frontend Deployment)](https://vercel.com/docs)
 - [Heroku (Backend Deployment)](https://devcenter.heroku.com/categories/reference) | [NextJS]
 - [Heroku Scheduler (For Cron Jobs)](https://devcenter.heroku.com/articles/scheduler)
@@ -97,11 +97,11 @@ I want to take my local ballot and use the app to make decisions on who to vote.
 
 
 ## Technology Story
+- Set up Cron jobs to save ballot information as JSON files in a NoSQL database from a 3rd party API.
 - Authenticate user.
-- Use information stored on the database from seperate cron jobs pulling in ballot information from a third party API.
-- Display a full ballot based on location.
+- Display a full ballot based on location from the database.
 - Use a LLM to choose the best choices and explain why choices were made.
-- Save these choices in the database for future use.
+- Save these choices as a seperate document in the database for future use.
 - Click a button to be able to see a shortlist of selections and why.
 - Make this information copyable and downloadable.
 

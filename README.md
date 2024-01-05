@@ -117,9 +117,9 @@ As a user I want too..
 
 
 
-- Create a user profile containing name, email address, phone number, physical address (latitude/longitude coordinates).
+- Create a user profile.
 - See my full ballot for my area.
-- Click a button to see voter suggestions based on my preferences.
+- Click a button to see voter suggestions.
 - Be able to copy these choices as a cheatsheet to a notepad, download them as a pdf or share them on social media.
 
 

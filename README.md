@@ -98,8 +98,10 @@ I want to take my local ballot and use the app to make decisions on who to vote.
 
 ## Technology Story
 - Authenticate user.
+- Use information stored on the database from seperate cron jobs pulling in ballot information from a third party API.
 - Display a full ballot based on location.
 - Use a LLM to choose the best choices and explain why choices were made.
+- Save these choices in the database for future use.
 - Click a button to be able to see a shortlist of selections and why.
 - Make this information copyable and downloadable.
 

@@ -95,7 +95,7 @@
 
 
 ## Purpose of this application
-To get concise voter suggestions on the 2024 election.
+To get concise voter suggestions on upcoming and current elections.
 
 
 

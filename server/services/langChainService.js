@@ -1,22 +1,18 @@
 const { OpenAIAPI } = require('langchain');
 
-const processPrompt = async (prompt, ballot) => {
-  // Initialize LangChain and OpenAI API here
+exports.getSuggestions = async (prompt, ballotData) => {
+  // Initialize LangChain and OpenAI API
   const langChain = new OpenAIAPI({ apiKey: process.env.OPENAI_API_KEY });
 
-  // Combine the user prompt with the ballot information
-  const combinedPrompt = `${prompt}\n\nBallot: ${JSON.stringify(ballot)}`;
+  // Combine prompt with ballot data
+  const combinedPrompt = `${prompt}\n\nBallot: ${JSON.stringify(ballotData)}`;
   
-  // Call the ChatGPT API through LangChain
+  // Call ChatGPT via LangChain
   const response = await langChain.complete({
     prompt: combinedPrompt,
-    // ...other parameters as needed
+    // Additional parameters
   });
 
-  // Process the response from ChatGPT to make a decision
-  const decision = response.choices[0].text.trim();
-
-  return { decision };
+  // Process and return the response
+  return response.choices[0].text.trim();
 };
-
-module.exports = { processPrompt };

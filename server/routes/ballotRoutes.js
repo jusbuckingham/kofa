@@ -1,25 +1,20 @@
 const express = require('express');
 const router = express.Router();
-const ballotService = require('../services/ballotService'); // Adjust the path as needed
+const ballotController = require('../controllers/ballotController');
 
-// GET route to fetch ballot choices by address
-router.get('/choices', async (req, res) => {
-  try {
-    // Extract address or other parameters from the request query
-    const address = req.query.address;
+// Get all ballots
+router.get('/', ballotController.getAllBallots);
 
-    // Call a function from your ballot service to get ballot choices
-    const choices = await ballotService.getBallotChoicesByAddress(address);
+// Get a single ballot by ID
+router.get('/:id', ballotController.getBallot);
 
-    // Send the response back to the client
-    res.json(choices);
-  } catch (error) {
-    // Handle errors and send an appropriate response
-    console.error('Error fetching ballot choices:', error);
-    res.status(500).send('Internal Server Error');
-  }
-});
+// Create a new ballot
+router.post('/', ballotController.createBallot);
 
-// Additional routes can be added here
+// Update a ballot
+router.put('/:id', ballotController.updateBallot);
+
+// Delete a ballot
+router.delete('/:id', ballotController.deleteBallot);
 
 module.exports = router;

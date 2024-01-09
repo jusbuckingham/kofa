@@ -1,42 +1,38 @@
 const express = require('express');
 const mongoose = require('mongoose');
 const cors = require('cors');
-const dotenv = require('dotenv');
-
-// Import routes
-const authRoutes = require('./routes/authRoutes');
 const ballotRoutes = require('./routes/ballotRoutes');
-const userRoutes = require('./routes/userRoutes'); // Assuming this file exists
+// Import additional routes as necessary
 
-// Load environment variables
-dotenv.config();
+// Load environment variables from .env file
+require('dotenv').config();
 
-// Create Express application
+// Create Express app
 const app = express();
 
 // Connect to MongoDB
-mongoose.connect(process.env.MONGO_URI, { useNewUrlParser: true, useUnifiedTopology: true })
-  .then(() => console.log('Connected to MongoDB'))
-  .catch(err => console.error('Could not connect to MongoDB:', err));
+mongoose.connect(process.env.MONGODB_URI, {
+  useNewUrlParser: true, 
+  useUnifiedTopology: true,
+  useFindAndModify: false,
+  useCreateIndex: true
+})
+.then(() => console.log('Connected to MongoDB'))
+.catch(err => console.error('Could not connect to MongoDB', err));
 
-// Use middleware
-app.use(cors()); // Enable CORS
-app.use(express.json()); // Parse JSON bodies
+// Middleware
+app.use(cors());
+app.use(express.json());
+app.use(express.urlencoded({ extended: true }));
 
-// Use routes
-app.use('/api/auth', authRoutes);
-app.use('/api/ballot', ballotRoutes);
-app.use('/api/users', userRoutes); // Use user routes
+// API routes
+app.use('/api/ballots', ballotRoutes);
+// Add any additional API routes here
 
-// Undefined routes handler (404)
-app.use((req, res, next) => {
-  res.status(404).send('Sorry, that route does not exist.');
-});
-
-// Global error handler
+// Error handling middleware
 app.use((err, req, res, next) => {
   console.error(err.stack);
   res.status(500).send('Something broke!');
 });
 
-module.exports = app; // Export the Express app
+module.exports = app;

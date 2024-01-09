@@ -6,43 +6,85 @@
 
 ## File Structure
 ```
-kofa/
-│
-├── client/                      # React frontend
-│   ├── public/                  # Public assets like HTML file
-│   │   └── index.html           # Main HTML file
-│   ├── src/                     # Source files for React
-│   │   ├── components/          # React components
-│   │   │   ├── BallotCard.js    # Component to display a single ballot item
-│   │   │   ├── BallotList.js    # Component to display list of ballots
-│   │   │   └── Login.js         # Component for user login
-│   │   ├── api/                 # API related functions
-│   │   │   └── serverApi.js     # Functions to interact with your Express server
-│   │   ├── App.js               # Main React application file
-│   │   └── index.js             # Entry point for React application
-│   ├── package.json             # Dependencies and scripts for the frontend
-│   └── ...
-│
-├── server/                      # Node/Express backend
-│   ├── models/                  # Mongoose models
-│   │   └── User.js              # User model with authentication and geocoding
-│   ├── routes/                  # Express routes
-│   │   ├── authRoutes.js        # Routes for authentication (login/register)
-│   │   ├── ballotRoutes.js      # Routes for ballot related requests
-│   │   └── userRoutes.js        # Routes for user-related operations (optional)
-│   ├── services/                # Business logic / services
-│   │   └── ballotService.js     # Service for API integration and data processing
-│   ├── scripts/                 # Standalone scripts for scheduled tasks
-│   │   └── fetchBallotData.js   # Script to fetch ballot data from Ballotpedia
-│   ├── app.js                   # Express app setup
-│   ├── server.js                # Main entry point for the server
-│   ├── package.json             # Dependencies and scripts for the backend
-│   └── ...
-│
-├── .env                         # Environment variables (for development)
-├── .gitignore                   # Specifies intentionally untracked files to ignore
-├── README.md                    # Project documentation
-└── package.json                 # Root package.json, primarily for scripts
+/kofa
+|-- /client
+|   |-- /public
+|   |   |-- vite.svg
+|   |
+|   |-- /src
+|   |   |-- /components
+|   |   |   |-- Header.jsx          # Assuming you have a header component
+|   |   |   |-- BallotList.jsx      # Component to list ballots
+|   |   |   |-- ...                 # Other components
+|   |   |
+|   |   |-- /auth                   # Add this for authentication components
+|   |   |   |-- LoginPage.jsx       # Login page component
+|   |   |   |-- SignUpPage.jsx      # Sign up page component
+|   |   |   |-- LogoutButton.jsx    # Logout button component
+|   |   |   |-- AuthProvider.jsx    # Context provider for auth state
+|   |   |   |-- useAuth.jsx         # Hook for authentication logic
+|   |   |
+|   |   |-- /services               # Add this for API service calls
+|   |   |   |-- api.js              # Setup for API calls
+|   |   |   |-- authService.js      # Service for authentication related API calls
+|   |   |
+|   |   |-- /hooks                  # Add this for any custom hooks
+|   |   |-- /pages                  # Add this for page components
+|   |   |   |-- HomePage.jsx        # Home page component
+|   |   |   |-- DashboardPage.jsx   # Dashboard page component
+|   |   |   |-- ProfilePage.jsx     # Profile page component
+|   |   |   |-- ...                 # Other pages
+|   |   |
+|   |   |-- App.jsx
+|   |   |-- index.css
+|   |   |-- main.jsx
+|   |   |-- ...
+|   |
+|   |-- .env_sample
+|   |-- .eslintrc.js
+|   |-- .gitignore
+|   |-- .prettierignore
+|   |-- index.html
+|   |-- LICENSE.md
+|   |-- package-lock.json
+|   |-- package.json
+|   |-- README.md
+|   |-- SECURITY.md
+|   |-- vite.config.js
+|
+|-- /server
+|   |-- /api
+|   |-- /models
+|   |   |-- ballot.js               # Schema for ballot information
+|   |   |-- user.js                 # Schema for user profiles
+|   |   |-- ...                     # Other models
+|   |
+|   |-- /routes
+|   |   |-- ballotRoutes.js         # Routes for ballot-related requests
+|   |   |-- userRoutes.js           # Routes for user-related requests
+|   |   |-- authRoutes.js           # Authentication routes
+|   |   |-- ...                     # Other routes
+|   |
+|   |-- /scripts                    # Add this if you have custom scripts
+|   |-- /services
+|   |   |-- langChainService.js     # Service for LangChain integration
+|   |   |-- ...                     # Other services
+|   |
+|   |-- app.js                      # If this is an Express app configuration
+|   |-- package-lock.json
+|   |-- package.json
+|   |-- server.js                   # Entry point of the Node.js server
+|   |-- .env
+|   |-- .gitignore
+|   |-- README.md
+|
+|-- /imgs
+|   |-- kofa-ui-wireframe.png
+|   |-- kofa.png
+|   |-- ...                         # Other image assets
+|
+|-- .gitignore                      # Global gitignore (if needed)
+|-- README.md                       # Global project README
 ```
 
 
@@ -139,4 +181,4 @@ As a user I want too..
 - Chat GPT: $20 Monthly
 - MongoDB: $20 Montlhy
 - Kinde: $10 Monthly
-- AWS S3: $20
+- AWS S3: $20 Monthly

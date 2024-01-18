@@ -5,88 +5,6 @@
 
 
 ## File Structure
-```
-/kofa
-|-- /client
-|   |-- /public
-|   |   |-- vite.svg
-|   |
-|   |-- /src
-|   |   |-- /components
-|   |   |   |-- Header.jsx          # Assuming you have a header component
-|   |   |   |-- BallotList.jsx      # Component to list ballots
-|   |   |   |-- ...                 # Other components
-|   |   |
-|   |   |-- /auth                   # Add this for authentication components
-|   |   |   |-- LoginPage.jsx       # Login page component
-|   |   |   |-- SignUpPage.jsx      # Sign up page component
-|   |   |   |-- LogoutButton.jsx    # Logout button component
-|   |   |   |-- AuthProvider.jsx    # Context provider for auth state
-|   |   |   |-- useAuth.jsx         # Hook for authentication logic
-|   |   |
-|   |   |-- /services               # Add this for API service calls
-|   |   |   |-- api.js              # Setup for API calls
-|   |   |   |-- authService.js      # Service for authentication related API calls
-|   |   |
-|   |   |-- /hooks                  # Add this for any custom hooks
-|   |   |-- /pages                  # Add this for page components
-|   |   |   |-- HomePage.jsx        # Home page component
-|   |   |   |-- DashboardPage.jsx   # Dashboard page component
-|   |   |   |-- ProfilePage.jsx     # Profile page component
-|   |   |   |-- ...                 # Other pages
-|   |   |
-|   |   |-- App.jsx
-|   |   |-- index.css
-|   |   |-- main.jsx
-|   |   |-- ...
-|   |
-|   |-- .env_sample
-|   |-- .eslintrc.js
-|   |-- .gitignore
-|   |-- .prettierignore
-|   |-- index.html
-|   |-- LICENSE.md
-|   |-- package-lock.json
-|   |-- package.json
-|   |-- README.md
-|   |-- SECURITY.md
-|   |-- vite.config.js
-|
-|-- /server
-|   |-- /api
-|   |-- /models
-|   |   |-- ballot.js               # Schema for ballot information
-|   |   |-- user.js                 # Schema for user profiles
-|   |   |-- ...                     # Other models
-|   |
-|   |-- /routes
-|   |   |-- ballotRoutes.js         # Routes for ballot-related requests
-|   |   |-- userRoutes.js           # Routes for user-related requests
-|   |   |-- authRoutes.js           # Authentication routes
-|   |   |-- ...                     # Other routes
-|   |
-|   |-- /scripts                    # Add this if you have custom scripts
-|   |-- /services
-|   |   |-- langChainService.js     # Service for LangChain integration
-|   |   |-- ...                     # Other services
-|   |
-|   |-- app.js                      # If this is an Express app configuration
-|   |-- package-lock.json
-|   |-- package.json
-|   |-- server.js                   # Entry point of the Node.js server
-|   |-- .env
-|   |-- .gitignore
-|   |-- README.md
-|
-|-- /imgs
-|   |-- kofa-ui-wireframe.png
-|   |-- kofa.png
-|   |-- ...                         # Other image assets
-|
-|-- .gitignore                      # Global gitignore (if needed)
-|-- README.md                       # Global project README
-```
-
 
 ## Wireframe (UI)
 ![Kofa UI Wireframe](imgs/kofa-ui-wirefram.png)
@@ -124,7 +42,6 @@ I want to take my local ballot and use the app to make decisions on who to vote.
 - [AWS)](https://docs.aws.amazon.com/)
 - [Vercel (Frontend Deployment)](https://vercel.com/docs)
 - [Heroku (Backend Deployment)](https://devcenter.heroku.com/categories/reference) | [NextJS]
-- [Heroku Scheduler (For Cron Jobs)](https://devcenter.heroku.com/articles/scheduler)
 
 
 

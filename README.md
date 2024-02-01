@@ -5,7 +5,7 @@
 To get quick voter suggestions on upcoming and current elections.
 
 ## Summary
-I want to take my local ballot and use the app to make decisions on who to vote.
+I want to take my local ballot and use the app to make decisions on who to vote for.
 
 ## Target States:
 - California
@@ -45,4 +45,3 @@ As a user I want too..
 - Access to previous year suggestions.
 - Real time election results.
 - Ability to chat with suggestions.
-- iOS and Android App
